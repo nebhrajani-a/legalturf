@@ -1,3 +1,3 @@
 * LegalTurf Website
 
-  Under active development.
+  Under active development. Temporarily hosted at [[https://nebhrajani-a.github.io/legalturf/index.html][~nebhrajani]].
