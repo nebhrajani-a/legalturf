@@ -1,0 +1,21 @@
+#+title: Cost Breakdown
+#+author: LegalTurf Website
+#+options: toc:nil
+
+#+ATTR_LATEX: :booktabs t
+| Task                   | Assignee      | Hours |
+|------------------------+---------------+-------|
+| Website initialization | Shrey         |     5 |
+| Bootstrap integration  | Shrey         |     5 |
+| Blog initialization    | Aditya        |  12.5 |
+| Blog frontend setup    | Aditya        |    10 |
+| Search integration     | Shrey         |     5 |
+| Miscellaneous pages    | Shrey         |   2.5 |
+| HTML/CSS design        | Shrey         |    10 |
+| Version control/SCM    | Aditya        |   2.5 |
+|------------------------+---------------+-------|
+| Total                  |               |    50 |
+|------------------------+---------------+-------|
+| Cost                   | Per hour (Rs) |   100 |
+|                        | Total (Rs)    |  5000 |
+#+TBLFM: @10$3=vsum(@2..@-2)
