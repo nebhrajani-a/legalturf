@@ -1,0 +1,98 @@
+#+title: Website Creation Options
+#+author: LegalTurf Website
+#+date: June 19, 2021
+#+options: toc:nil
+
+# #+latex_class: org-report
+#+latex_class_options: [9pt]
+#+latex_header:\usepackage{parskip}
+#+latex_header:\usepackage{sectsty}
+#+latex_header:\sectionfont{\fontsize{12}{15}\selectfont}
+#+latex_header:\subsectionfont{\fontsize{11}{11}\selectfont}
+#+latex_header: \setlength\parindent{0pt}
+#+latex_header: \usepackage{parskip}
+#+latex_header: \usepackage{pifont}
+#+latex_header: \makeatletter
+#+latex_header: \def\@makechapterhead#1{%
+#+latex_header:  {\parindent \z@ \raggedright \normalfont
+#+latex_header:    \ifnum \c@secnumdepth >\m@ne
+#+latex_header:        \LARGE\bfseries \thechapter~
+#+latex_header:    \fi
+#+latex_header:    \interlinepenalty\@M
+#+latex_header:    \LARGE \bfseries #1\par\nobreak
+#+latex_header:    \vskip 10\p@
+#+latex_header:  }}
+#+latex_header:\def\@makeschapterhead#1{%
+#+latex_header:  {\parindent \z@ \raggedright
+#+latex_header:    \normalfont
+#+latex_header:    \interlinepenalty\@M
+#+latex_header:    \Huge \bfseries  #1\par\nobreak
+#+latex_header:    \vskip 10\p@
+#+latex_header:  }}
+#+latex_header:\makeatother
+
+* Mainstream Blogging Options
+
+   - There are three ways of creating the required website: using
+     Blogger, Wordpress, and Ghost. Unfortunately, /none/ of these are
+     static, which means they cannot be hosted on GitHub Pages.
+   - As such, prior to our implementation of the website, it must
+     /first/ be hosted on a webserver which supports dynamic webpages.
+   - It is also a good idea to host first since domain names tend to
+     be "squatted" when interest is shown.
+   - This table assumes your billing cycle is annual to minimize
+     monthly cost, since buying on a per-month basis is far more
+     expensive.
+   - Each of Blogger, Wordpress, and Ghost provide a certain feature
+     set, and are priced somewhat differently.
+   - This table compares these by assigning a difficulty score for the
+     implementation of any given feature, with 0 being built-in, and
+     10 being impossible. (Lower is better).
+
+#+ATTR_LATEX: :booktabs t :align lccc
+|                       |                   *Blogger* |   *Wordpress* |      *Ghost* |
+|                       | \small Default hosting cost | \small $13/mo | \small $9/mo |
+|-----------------------+-----------------------------+---------------+--------------|
+| Blogging              |                           6 |             5 |            3 |
+| Other content         |                           8 |             6 |            7 |
+| SEO                   |                          10 |            10 |            0 |
+| Membership & email    |                           9 |       +$16/mo |            3 |
+| Email newsletters     |                           9 |       +$16/mo |            3 |
+| Subscribers           |                          10 |            10 |            3 |
+| SSL                   |                           9 |             7 |            4 |
+|-----------------------+-----------------------------+---------------+--------------|
+| Content Creation      |                           7 |             5 |            2 |
+| Website editing (GUI) |                          10 |             8 |            5 |
+| Support               |                           9 |             8 |            6 |
+| Sending emails        |                      Manual |             6 |            3 |
+
+   - The final rows deal with the ease of use and maintenance on the
+     user's (your) end, which should give an idea of how much support
+     will be later required.
+   - Note that sending emails /without/ Wordpress, Ghost, or MailChimp
+     almost assures that they'll be trapped by a spam filter and never
+     actually read by a human.
+
+As such, *Ghost* is the most cost-effective and fully-featured option
+of the three. Blogger is nearly obsolete and difficult to use.
+Wordpress is the most customizable, but requires a lot of work and
+money to run smoothly.
+
+
+* GitHub Pages: Zero Cost, Static
+
+  There is one more, possibly zero-cost option. GitHub provides a
+  hosting page for free. However, the domain must end in =.github.io=,
+  and has a certain technical learning curve (which can be taught in a
+  one hour session). Emails will have to be
+  sent manually (=cc=), and email data also collected manually, since
+  there's no server-side database support.
+
+  However, the advantage of GitHub pages is the *zero upfront cost,
+  forever*, and the possibility to eventually shift to a non-GitHub
+  domain without having to stop using Pages.
+
+* Get Back to Us!
+
+  Let us know which of the four (3 mainstream or GitHub) options you
+  want to move forward with, and we'll coordinate from there.

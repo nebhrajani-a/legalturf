@@ -1,0 +1,134 @@
+% Created 2021-06-22 Tue 12:43
+% Intended LaTeX compiler: xelatex
+\documentclass[9pt]{article}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage[hidelinks]{hyperref}
+\usepackage[a4paper, total={6in,9in}]{geometry}
+\usepackage{booktabs}
+\usepackage{minted}
+\usepackage{parskip}
+\usepackage{sectsty}
+\sectionfont{\fontsize{12}{15}\selectfont}
+\subsectionfont{\fontsize{11}{11}\selectfont}
+\setlength\parindent{0pt}
+\usepackage{parskip}
+\usepackage{pifont}
+\makeatletter
+\def\@makechapterhead#1{%
+{\parindent \z@ \raggedright \normalfont
+\ifnum \c@secnumdepth >\m@ne
+\LARGE\bfseries \thechapter~
+\fi
+\interlinepenalty\@M
+\LARGE \bfseries #1\par\nobreak
+\vskip 10\p@
+}}
+\def\@makeschapterhead#1{%
+{\parindent \z@ \raggedright
+\normalfont
+\interlinepenalty\@M
+\Huge \bfseries  #1\par\nobreak
+\vskip 10\p@
+}}
+\makeatother
+\author{LegalTurf Website}
+\date{June 19, 2021}
+\title{Website Creation Options}
+\hypersetup{
+ pdfauthor={LegalTurf Website},
+ pdftitle={Website Creation Options},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.2 (Org mode 9.3.6)},
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Mainstream Blogging Options}
+\label{sec:org62b9c73}
+
+\begin{itemize}
+\item There are three ways of creating the required website: using
+Blogger, Wordpress, and Ghost. Unfortunately, \emph{none} of these are
+static, which means they cannot be hosted on GitHub Pages.
+\item As such, prior to our implementation of the website, it must
+\emph{first} be hosted on a webserver which supports dynamic webpages.
+\item It is also a good idea to host first since domain names tend to
+be ``squatted'' when interest is shown.
+\item This table assumes your billing cycle is annual to minimize
+monthly cost, since buying on a per-month basis is far more
+expensive.
+\item Each of Blogger, Wordpress, and Ghost provide a certain feature
+set, and are priced somewhat differently.
+\item This table compares these by assigning a difficulty score for the
+implementation of any given feature, with 0 being built-in, and
+10 being impossible. (Lower is better).
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+ & \textbf{Blogger} & \textbf{Wordpress} & \textbf{Ghost}\\
+ & \small Default hosting cost & \small \$13/mo & \small \$9/mo\\
+\midrule
+Blogging & 6 & 5 & 3\\
+Other content & 8 & 6 & 7\\
+SEO & 10 & 10 & 0\\
+Membership \& email & 9 & +\$16/mo & 3\\
+Email newsletters & 9 & +\$16/mo & 3\\
+Subscribers & 10 & 10 & 3\\
+SSL & 9 & 7 & 4\\
+\midrule
+Content Creation & 7 & 5 & 2\\
+Website editing (GUI) & 10 & 8 & 5\\
+Support & 9 & 8 & 6\\
+Sending emails & Manual & 6 & 3\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item The final rows deal with the ease of use and maintenance on the
+user's (your) end, which should give an idea of how much support
+will be later required.
+\item Note that sending emails \emph{without} Wordpress, Ghost, or MailChimp
+almost assures that they'll be trapped by a spam filter and never
+actually read by a human.
+\end{itemize}
+
+As such, \textbf{Ghost} is the most cost-effective and fully-featured option
+of the three. Blogger is nearly obsolete and difficult to use.
+Wordpress is the most customizable, but requires a lot of work and
+money to run smoothly.
+
+
+\section{GitHub Pages: Zero Cost, Static}
+\label{sec:org08ccc5f}
+
+There is one more, possibly zero-cost option. GitHub provides a
+hosting page for free. However, the domain must end in \texttt{.github.io},
+and has a certain technical learning curve (which can be taught in a
+one hour session). Emails will have to be
+sent manually (\texttt{cc}), and email data also collected manually, since
+there's no server-side database support.
+
+However, the advantage of GitHub pages is the \textbf{zero upfront cost,
+forever}, and the possibility to eventually shift to a non-GitHub
+domain without having to stop using Pages.
+
+\section{Get Back to Us!}
+\label{sec:orgddd991d}
+
+Let us know which of the four (3 mainstream or GitHub) options you
+want to move forward with, and we'll coordinate from there.
+\end{document}
